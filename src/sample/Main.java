@@ -5,12 +5,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
@@ -50,7 +48,6 @@ public class Main extends Application {
         setPosition(letter, 20, 20);
         setPosition(word, WIDTH / 2 - 50, HEIGHT / 2 - 20);
 
-        //root.getChildren().addAll(word, letter);
         root.setCenter(word);
         root.setTop(letter);
         BorderPane.setAlignment(letter, Pos.TOP_CENTER);
